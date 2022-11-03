@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+      table, th, tr {
+        border:1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div> 
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="mariorossi@gmail.com">
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="********">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" placeholder="Mario">
+        <label for="lastname">Cognome:</label>
+        <input type="text" name="lastname" placeholder="Rossi">
+        <label for="date">Data di nascita:</label>
+        <input type="date" name="date">
+      </div>
+      <div> 
+        <label for="abbonamento">Scegli l'abbonamento che preferisci</label>
+        <select name="abbonamento" id="abbonamento">
+          <optgroup label="Mensile">
+            <option value="gratuito">Gratuito</option>
+            <option value="10">Abbonamento 10€/mese</option>
+            <option value="30">Abbonamento 30€/mese</option>
+          </optgroup>
+        </select>
+      </div>
+      <div> 
+        <label for="abbonamento_pro">Abbonamento pro</label>
+        <input type="checkbox" name="abbonamento_pro" id="abbonamento_pro">
+        <label for="cartaDiCredito">Numero carta di credito</label>
+        <input type="text" name="cartaDiCredito" id="cartaDiCredito">
+        <label for="CVC">Codice di sicurezza</label>
+        <input type="text" name="CVC" id="CVC">
+        <label for="dataDiScadenza">Data di scadenza</label>
+        <input type="date" name="dataDiScadenza" id="dataDiScadenza">
+        <label for="indirizzo_di_fatturazione">Indirizzo di fatturazione</label>
+        <input type="address" name="indirizzo_di_fatturazione" id="indirizzo_di_fatturazione">
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    
+  </body>
+</html>
