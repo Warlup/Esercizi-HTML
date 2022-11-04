@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Lesson</title>
+    <style> 
+    
+    body {
+      background-color:#FAEBD7;
+    }
+     main, h3, label, input, footer {
+      margin: 0px 0px 10px 12px;
+     }
+
+     address {
+      display: block;
+      font-style: italic;
+    }
+
+
+    input:invalid { border: 2px double #FF0000;}
+    input:valid { border: 2px solid #000000;}
+
+    </style>
+  </head>
+  <body>
+    <main> 
+      <article>
+        <header>
+          <h1>Questo è un articolo breve</h1>
+          <img 
+          srcset="assets/hands.png 1920w,
+                  assets/hands.png 960w" 
+          src="assets/hands.png" 
+          alt="mani che scrivono al PC" />
+        </header>
+        <p> Questo è il paragrafo dell'articolo dove spiegheremo i principi della <em> termodinamica </em> in modo sintetico: <br>
+          La termodinamica è la branca della fisica classica e della chimica che studia e descrive le trasformazioni termodinamiche indotte da calore a lavoro e viceversa in un sistema termodinamico, in seguito a processi che coinvolgono cambiamenti delle variabili di stato temperatura ed energia.
+        Esistono due principi su cui si basa la termodinamica
+        </p>
+        <ul>
+          <li>Il primo afferma che: 
+            <blockquote>  
+              Quando un corpo viene posto a contatto con un altro corpo relativamente più freddo avviene una trasformazione che porta a uno stato di equilibrio nel quale sono uguali le temperature dei due corpi.</li>
+            </blockquote>
+          <li>Il secondo afferma che: 
+            <blockquote>  
+              È impossibile realizzare una trasformazione il cui risultato sia solamente quello di convertire in lavoro meccanico il calore prelevato da un'unica sorgente</li>
+            </blockquote>
+        </ul>
+      </article>
+  <hr>
+    <form>
+      <img 
+        srcset="assets/laptop.png 1920w,
+                assets/laptop.png 960w"
+        src="/assets/laptop.png" 
+        alt="immagine di un laptop" />
+        <h3> Se ti è piaciuto questo articolo, iscrivi alla nostra newsletter!</h2>
+        <label for="iscrizione">Iscriviti spuntando la casella qui di fianco:</label>
+        <input type="checkbox" name="iscrizione" id="iscrizione" />
+        <br>
+        <label for="nome">Nome <abbr title="required">*</abbr> </label>
+        <input type="text" name="nome" id="nome" required />
+        <br>
+        <label for="cognome">Cognome <abbr title="required">*</label>
+        <input type="text" name="cognome" id="cognome" required />
+        <br>
+        <label for="email">Email <abbr title="required">*</label>
+        <input type="email" name="email" id="email" required />
+        <br>
+        <label for="scrivici">Allega un parere o un consiglio</label>
+        <textarea name="scrivici" id="scrivici" cols="30" rows="2"></textarea>
+
+        <button>Invia</button>
+    </form>
+  </main>
+    
+  <hr>
+    <footer>
+      <address> 
+        <p>Autore: Barba Gianni</p>
+        <p>Email: <a href="mailto:barbagianni27@live.com">barbagianni27@live.com</a></p>
+      </address>
+    </footer>
+  </body>
+</html>
